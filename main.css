@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  background-color: hsl(218, 23%, 16%);
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 1rem;
+  color: white;
+}
+footer span {
+  color: hsla(150, 100%, 66%, 0.856);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 19%, 24%);
+  width: 600px;
+  border-radius: 15px;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 70px;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+main p {
+  font-size: 0.8rem;
+  color: hsla(150, 100%, 66%, 0.856);
+  font-weight: 800;
+  margin: 20px;
+  letter-spacing: 5px;
+}
+main p span {
+  margin-left: 6px;
+}
+main h3 {
+  color: hsl(193, 38%, 86%);
+  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 120px;
+}
+main h3::first-letter {
+  text-transform: capitalize;
+}
+main h3::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 1px;
+  bottom: -50px;
+  right: 0;
+  background-color: white;
+  opacity: 0.2;
+}
+main h3::before {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 1px;
+  bottom: -50px;
+  left: 0;
+  background-color: white;
+  opacity: 0.2;
+}
+main .fa-pause {
+  position: absolute;
+  bottom: 75px;
+  color: hsl(193, 38%, 86%);
+  font-size: 1.8rem;
+}
+main .circle {
+  width: 60px;
+  height: 60px;
+  background-color: hsla(150, 100%, 66%, 0.856);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -50px;
+  margin: 20px;
+  transition: 0.3s;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+main .circle:hover {
+  box-shadow: 0 0 39px 3px hsla(150, 100%, 66%, 0.856);
+}
+main .circle:disabled {
+  cursor: not-allowed;
+}
+main .circle i {
+  font-size: 1.6rem;
+  color: hsl(218, 23%, 16%);
+  border: none;
+}
+
+@media (max-width: 700px) {
+  main {
+    margin: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
